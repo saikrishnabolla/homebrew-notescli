@@ -1,15 +1,15 @@
 class Notescli < Formula
   desc "CLI and MCP server for Apple Notes"
   homepage "https://github.com/saikrishnabolla/NotesCLI"
-  url "https://github.com/saikrishnabolla/NotesCLI/releases/download/v1.0.3/notescli-1.0.3-macos-universal.tar.gz"
-  version "1.0.3"
-  sha256 "8b7924a7b816dae0ef6cd4bba9b65f9743633aef7d15f8f2890957c02d7005f1"
+  url "https://github.com/saikrishnabolla/NotesCLI/releases/download/v1.1.0/notescli-1.1.0-macos-universal.tar.gz"
+  sha256 "f9a70733f551280f5f3646ec8279ff3f6a02bc0927ea4f105832feaa3a85db3f"
   license "MIT"
 
   depends_on macos: :sonoma
 
   def install
     bin.install "notescli"
+    libexec.install "NotesCLI Capability Host.app"
   end
 
   test do
